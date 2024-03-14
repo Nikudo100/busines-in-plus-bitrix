@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/busines-in-plus/assets/js/main.js" => "17095558742513","/bitrix/components/bitrix/menu/templates/tree/script.js" => "1709407544170",]; ?>

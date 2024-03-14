@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/bitrix/landing.landing_view/templates/.default/script.js" => "170941192131806",]; ?>

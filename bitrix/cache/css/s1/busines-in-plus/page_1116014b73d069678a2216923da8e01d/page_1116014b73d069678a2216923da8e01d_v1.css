@@ -1,0 +1,24 @@
+
+
+/* Start:/local/components/custom/main.feedback/templates/bootstrap_v4/style.min.css?170940752932*/
+.mf-control-required{color:#f00}
+/* End */
+
+
+/* Start:/local/templates/.default/components/bitrix/news/main_page.events/bitrix/news.list/.default/style.css?1709943114150*/
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+/* End */
+/* /local/components/custom/main.feedback/templates/bootstrap_v4/style.min.css?170940752932 */
+/* /local/templates/.default/components/bitrix/news/main_page.events/bitrix/news.list/.default/style.css?1709943114150 */

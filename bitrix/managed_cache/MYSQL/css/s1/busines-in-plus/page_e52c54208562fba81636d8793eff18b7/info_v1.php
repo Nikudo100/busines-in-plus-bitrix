@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/.default/components/bitrix/catalog.section.list/training-tree/style.css" => "17102929411020",]; ?>
