@@ -28,7 +28,7 @@ $arUrlRewrite=array (
   array (
     'CONDITION' => '#^/o-komnanii/obuchenie/#',
     'RULE' => '',
-    'ID' => 'bitrix:news',
+    'ID' => 'bitrix:catalog',
     'PATH' => '/o-komnanii/obuchenie/index.php',
     'SORT' => 100,
   ),

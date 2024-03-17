@@ -1,0 +1,7 @@
+.vscode/
+bitrix/*
+./bitrix/cache/
+bitrix/cache/
+bitrix/cache/*
+bitrix/managed_cache/
+bitrix/managed_cache/*

@@ -4,13 +4,14 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 }
 
 $this->setFrameMode(true);
-// debug($arResult["SECTIONS"]);
+// debug($arResult);
 $strTitle = "";
 ?>
 <div class="catalog-section-list">
 	<h2>Прочитайте готовые ответы</h2>
 	<?
 	$TOP_DEPTH = $arResult["SECTION"]["DEPTH_LEVEL"];
+	// dd(	$TOP_DEPTH);
 	$CURRENT_DEPTH = $TOP_DEPTH;
 
 	foreach ($arResult["SECTIONS"] as $arSection) {
@@ -61,7 +62,7 @@ $strTitle = "";
 	}
 		?>
 </div>
-<?= ($strTitle ? '<br/><h2>' . $strTitle . '</h2>' : '') ?>
+<?// ($strTitle ? '<br/><h2>' . $strTitle . '</h2>' : '') ?>
 
 <?php
 function getElementSection($sectionId)
@@ -85,12 +86,14 @@ function getElementSection($sectionId)
 		$arFilter,
 		false,
 		false,
-		$arSelect
+		// $arSelect
 	);
 	echo '<ul class="elements">';
 	// Выводим элементы раздела
 	while ($arItem = $res->GetNext()) {
-		echo '<li class="element"><a href="' . $arItem['DETAIL_PAGE_URL'] . '">' . $arItem['NAME'] . '</a></li>';
+
+		// debug($arItem);
+		echo '<li class="element" ><a href="' . $arItem['DETAIL_PAGE_URL'] . '">' . $arItem['NAME'] . '</a></li>';
 	}
 	echo '</ul>';
 }

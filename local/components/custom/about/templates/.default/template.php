@@ -8,23 +8,23 @@
 	</div>
 	<div class="about container">
 		<div class="opport-row-img about-image">
-			<?
-			// Get the file extension of the preview picture
-			$F = CFile::GetFileArray($arResult['ELEMENT']['PREVIEW_PICTURE']);
-			$altText = $F['DESCRIPTION'];
-			$isVideo = preg_match('/\b(mp4|mov|avi)\b/i', $altText);
-			if ($isVideo) :
-			?>
-				<a class="client-text-row-img slide-video" data-fancybox="gallery" href="<?= $altText ?>">
-					<video class="rounded" rounded>
-						<source src="<?= $altText ?>" type="video/mp4">
-					</video>
-				</a>
-			<? else : ?>
-				<a class="client-text-row-img slide-video" data-fancybox="gallery" href="<?= $F['SRC'] ?>">
-					<img src="<?= $F['SRC'] ?>" alt="<?= $altText ?>">
-				</a>
-			<? endif ?>
+				<?
+				// Get the file extension of the preview picture
+				$F = CFile::GetFileArray($arResult['ELEMENT']['PREVIEW_PICTURE']);
+				$altText = $F['DESCRIPTION'];
+				$isVideo = preg_match('/\b(mp4|mov|avi)\b/i', $altText);
+				if ($isVideo) :
+				?>
+					<a class="client-text-row-img slide-video" data-fancybox="gallery" href="<?= $altText ?>">
+						<video class="rounded" rounded>
+							<source src="<?= $altText ?>" type="video/mp4">
+						</video>
+					</a>
+				<? else : ?>
+					<a class="client-text-row-img slide-video" data-fancybox="gallery" href="<?= $F['SRC'] ?>">
+						<img src="<?= $F['SRC'] ?>" alt="<?= $altText ?>">
+					</a>
+				<? endif ?>
 		</div>
 		<div class="about-text">
 			<?= $arResult['ELEMENT']['PREVIEW_TEXT'] ?>

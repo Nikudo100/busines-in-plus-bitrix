@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $('.but-modal-breef').click(function () {
     openModalBreef()
   })
-  $('.auto-sistem-promo-button, .man-text-button, .opport-row-text-but').click(function () {
+  $('.auto-sistem-promo-button, .man-text-button, .opport-row-text-but, .question').click(function () {
     openModalFeedBack()
   })
 

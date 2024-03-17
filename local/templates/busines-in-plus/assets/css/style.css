@@ -1459,8 +1459,8 @@ footer {
 .event-page-row-info-img {
   flex-shrink: 0;
   margin-bottom: 50px;
-  width: 270px;
-  height: 270px;
+  /* width: 270px;
+  height: 270px; */
   border-radius: 4px;
   border: 1px solid #BACFD2;
   margin-right: 30px;
@@ -1480,7 +1480,7 @@ footer {
 
 .event-page .img-container {
   margin: 0 35px 80px;
-  min-width: 1920px;
+  max-width: calc(100vw - 30px);
 }
 
 .event-page .img-container .d-flex {
@@ -2040,6 +2040,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
+  height: 100%;
   z-index: 100;
   content: '';
   background: rgba(0, 0, 0, 0.4);
@@ -2314,11 +2315,13 @@ button[data-panzoom-action="iterateZoom"] {
 
 .catalog-section-list {
   max-width: 570px;
+  height: fit-content;
 }
 .catalog-section-list h2{
   padding-left: 30px;
   padding-top: 15px;
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 .elements {
   list-style: disc;
@@ -2426,7 +2429,7 @@ button[data-panzoom-action="iterateZoom"] {
   flex-basis: 569px;
 }
 .news-list-obch {
-  margin-top: 55px;
+  /* margin: 55px 0; */
   padding: 35px;
   padding-bottom: 15px;
   border: 1px solid #BACFD2;
@@ -2442,7 +2445,6 @@ button[data-panzoom-action="iterateZoom"] {
   font-size: 12px;
   font-weight: 600;
   line-height: 15px;
-  margin: 0 15px;
   flex-shrink: 0;
   font-family: 'Rubik';
   text-align: center;
@@ -2461,7 +2463,9 @@ button[data-panzoom-action="iterateZoom"] {
   font-weight: 600;
   color: #353744;
 }
-
+.news-item-obuch:hover a ,.news-item-obuch:hover .obuch-date {
+  color: #00C3B8;
+}
 .news-item-obuch::marker {
   color: #00C3B8;
 }
@@ -2486,4 +2490,19 @@ button[data-panzoom-action="iterateZoom"] {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
+  margin-top: 30px;
+}
+.some-section1{
+  max-width: 670px;
+}
+.catalog-section .fff{
+  gap: 30px;
+  justify-content: space-between;
+}
+.some-section .catalog-section-list{
+  border: 1px solid #BACFD2;
+}
+
+.fff .search-form{
+ margin-bottom: 35px;
 }

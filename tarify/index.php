@@ -12,6 +12,9 @@ $APPLICATION->SetTitle("Тарифы");
 		"START_FROM" => "0"
 	)
 ); ?>
+<div class="sravnenie">
+		
+</div>
 <? $APPLICATION->IncludeComponent(
     "custom:tarify",
     ".default",
