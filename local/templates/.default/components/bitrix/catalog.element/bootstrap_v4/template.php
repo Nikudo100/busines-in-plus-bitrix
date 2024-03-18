@@ -183,9 +183,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-' . $arParams['TEMPLATE_
 	<?php
 	}
 	?>
-	<div class="row">
-
-		<div>
+	<div class="elem d-flex">
+		<div class="elem-obuch">
 			<div class="detail-text">
 				<?= $arResult['PREVIEW_TEXT'] ?>
 			</div>
@@ -212,7 +211,17 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-' . $arParams['TEMPLATE_
 				<?= $arResult['DETAIL_TEXT'] ?>
 			</div>
 		</div>
-
+		<div class="elem-obuch1">
+			<?
+			$APPLICATION->IncludeComponent(
+				"bitrix:catalog.section.list",
+				"tree1",
+				["IBLOCK_ID" => $arParams["IBLOCK_ID"],],
+				null,
+				($arParams["SHOW_TOP_ELEMENTS"] !== "N" ? array("HIDE_ICONS" => "Y") : array())
+			);
+			?>
+		</div>
 	</div>
 	<?php
 	if ($haveOffers) {
